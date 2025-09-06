@@ -1,0 +1,12 @@
+{
+  "name": "Flutter Codespace (Cirrus)",
+  "image": "ghcr.io/cirruslabs/flutter:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": ["Dart-Code.flutter", "Dart-Code.dart-code"]
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y git curl unzip nodejs npm && flutter doctor -v",
+  "forwardPorts": [8080],
+  "remoteUser": "root"
+}
